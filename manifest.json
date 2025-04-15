@@ -1,0 +1,29 @@
+{
+        "manifest_version": 3,
+        "name": "Word to Google Doc",
+        "version": "1.0",
+        "description": "Automatically fetch definitions and images for selected words and append them to a Google Doc.",
+        "background": {
+          "service_worker": "background.js"
+        },
+        "permissions": [
+          "contextMenus",
+          "identity",
+          "notifications",
+          "activeTab"
+        ],
+        "host_permissions": [
+          "https://api.dictionaryapi.dev/*",
+          "https://api.unsplash.com/*",
+          "https://docs.googleapis.com/*"
+        ],
+        "oauth2": {
+          "client_id": "117134547472-rfkdnmh16ghem4a2b25hmlcolsptfuv3.apps.googleusercontent.com",
+          "scopes": [
+            "https://www.googleapis.com/auth/documents"
+          ]
+        },
+        "icons": {
+          "48": "icon.png"
+        }
+      }
